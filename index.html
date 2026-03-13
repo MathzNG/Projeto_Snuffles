@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alimentador Automático</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <img src="imagem/Snuffles.png" class="logo">
+
+<div class="container">
+
+    <div class="glass">
+
+        <h2>Configurar Horários</h2>
+
+        <form action="/set">
+            <label>Horário 1</label>
+            <input type="time" name="h1" value=")rawliteral" + horario1 + R"rawliteral(">
+
+            <label>Horário 2</label>
+            <input type="time" name="h2" value=")rawliteral" + horario2 + R"rawliteral(">
+
+            <button type="submit">Salvar</button>
+        </form>
+
+        <button class="liberar" onclick="liberar()">Liberar Agora</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
