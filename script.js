@@ -1,11 +1,13 @@
 function liberar(){
 
-fetch('/liberar')
-.then(() => {
-alert("Ração liberada!");
-})
-.catch(() => {
-alert("Erro ao liberar ração");
-});
+fetch('/liberar');
+
+const toast = document.getElementById("toast");
+
+toast.classList.add("show");
+
+setTimeout(() => {
+toast.classList.remove("show");
+}, 3000);
 
 }
