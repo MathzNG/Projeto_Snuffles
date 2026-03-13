@@ -12,10 +12,11 @@ justify-content:center;
 align-items:center;
 background: linear-gradient(135deg,#667eea,#764ba2);
 
-background-image: url("imagem/Dog_por_do_sol.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+
+height: 100vh;
+margin: 0;
+background: linear-gradient(to right, #4facfe, #00f2fe);
+  
 }
 
 .logo{
