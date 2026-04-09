@@ -6,37 +6,44 @@
 <title>Alimentador Automático</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
-    <img src="imagem/Snuffles.png" class="logo">
+<img src="imagem/Snuffles.png" class="logo">
 
 <div class="container">
+  <div class="glass">
 
-    <div class="glass">
+    <h2>Configurar Horários</h2>
 
-        <h2>Configurar Horários</h2>
+    <form id="formHorarios">
+      <label>Horário 1</label>
+      <input type="time" id="h1">
 
-        <form action="/set">
-            <label>Horário 1</label>
-            <input type="time" name="h1" value=")rawliteral" + horario1 + R"rawliteral(">
+      <label>Horário 2</label>
+      <input type="time" id="h2">
 
-            <label>Horário 2</label>
-            <input type="time" name="h2" value=")rawliteral" + horario2 + R"rawliteral(">
+      <label>Horário 3</label>
+      <input type="time" id="h3">
 
-            <button type="submit">Salvar</button>
-        </form>
+      <button type="submit">Salvar</button>
+    </form>
 
-        <button class="liberar" onclick="liberar()">Liberar Agora</button>
+    <h3>Horários salvos:</h3>
+    <ul>
+      <li id="show1">--:--</li>
+      <li id="show2">--:--</li>
+      <li id="show3">--:--</li>
+    </ul>
 
-    </div>
+    <button class="liberar" onclick="liberar()">Liberar Agora</button>
 
+  </div>
 </div>
 
 <div id="toast">🐶 Ração liberada!</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
